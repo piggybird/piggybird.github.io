@@ -1,0 +1,49 @@
+---
+layout: post-index
+title: "Research"
+description: "Research"
+comments: false
+---
+
+{% if site.categories.research %}
+{% for post in site.categories.research %}
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
+      <span style="font-size: 10pt; color: #3218;"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%B %d, %Y" }}&nbsp;&nbsp;<i class="fa fa-user"></i>&nbsp;{{ post.authors }}</span>
+      {% if site.reading_time %}
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        {% assign readtime = post.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
+        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+      </span><!-- /.entry-reading-time -->
+      {% endif %}
+    </div><!-- /.entry-meta -->
+    {% if post.link %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+    {% else %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+    {% endif %}
+  </header>
+  <div class="entry-content">
+    <div class="responsive">
+      <div class="img2">
+        {% if post.image.feature %}
+            <img alt="{{ post.title }}" src="{{ post.image.feature }}">
+        {% else %}
+            <img alt="{{ post.title }}" src="{{ site.url }}/assets/images/no_image.jpg">
+        {% endif %}
+      </div>
+    </div>
+    {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 150 }}&hellip;{% endif %}
+    <div align="left">
+        <div markdown="0"><a href="{{ site.url }}{{ post.url }}" class="btn btn-info">Continue Reading ...</a></div>
+    </div>
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+{% endfor %}
+{% else %}
+<article class="hentry">
+There is no post now
+</article>
+{% endif %}

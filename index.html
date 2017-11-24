@@ -1,0 +1,46 @@
+---
+layout: home
+title:
+description: "A blog about security"
+comments: false
+---
+<div class="read-home">
+	<h3 class="anchor-home-category-name" id="latest">Latest</h3>
+{% for post in site.posts limit:4 %}{% if post.title != null %}
+	<div class="list-home">
+	      <div class="img">
+			{% if post.image.feature %}
+				<img alt="{{ post.title }}" src="{{ post.image.feature }}">
+			{% else %}
+				<img alt="{{ post.title }}" src="{{ site.url }}/assets/images/no_image.jpg">
+			{% endif %}
+		  </div>
+		<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		<span style="font-size: 9pt;"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%d/%m/%Y" }}&nbsp;<i class="fa fa-user"></i>&nbsp;{{ post.authors }}</span>
+		<font style="font-size: 9pt">{% if post.excerpt %}{{ post.excerpt| truncate: 80 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 80 }}&hellip;{% endif %}</font>
+	</div>
+{% endif %}{% endfor %}
+</div>
+
+{% capture site_cats %}{% for cat in site.categories %}{{ cat | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign cats_list = site_cats | split:',' | sort %}
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
+  <div class="read-home">
+    <h3 class="anchor-home-category-name" id="{{ this_word }}">{{ this_word }}</h3>
+    {% for post in site.categories[this_word] limit:4 %}{% if post.title != null %}
+		<div class="list-home">
+			<div class="img">
+			{% if post.image.feature %}
+				<img alt="{{ post.title }}" src="{{ post.image.feature }}">
+			{% else %}
+				<img alt="{{ post.title }}" src="{{ site.url }}/assets/images/no_image.jpg">
+			{% endif %}
+			</div>
+			<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			<span style="font-size: 9pt;"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%d/%m/%Y" }}&nbsp;<i class="fa fa-user"></i>&nbsp;{{ post.authors }}</span>
+			<font style="font-size: 9pt">{% if post.excerpt %}{{ post.excerpt| truncate: 80  }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 80 }}&hellip;{% endif %}</font>
+		</div>
+    {% endif %}{% endfor %}
+  </div>
+{% endunless %}{% endfor %}

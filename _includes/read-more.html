@@ -1,0 +1,18 @@
+<div class="read-more">
+    <h3 class="anchor-home-category-name" id="relatedposts">Related Posts</h3>
+  <div class="read-more-list">
+    {% for post in site.related_posts limit:3 %}
+      <div class="list-item">
+      <div class="img">
+      {% if post.image.feature %}
+        <img alt="{{ post.title }}" src="{{ post.image.feature }}">
+      {% else %}
+        <img alt="{{ post.title }}" src="{{ site.url }}/assets/images/no_image.jpg">
+      {% endif %}
+      </div>
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <span style="font-size: 9pt;"><i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%d/%m/%Y" }}&nbsp;<i class="fa fa-user"></i>&nbsp;{{ post.authors }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>

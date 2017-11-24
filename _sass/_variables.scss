@@ -1,0 +1,50 @@
+// Typography
+// --------------------------------------------------
+
+$base-font: 'utmavo', Calibri, Arial, sans-serif;
+$heading-font: $base-font;
+$caption-font: $base-font;
+$code-font: monospace;
+$alt-font: serif;
+
+$doc-font-size: 16;
+$doc-line-height: 26;
+
+
+// set-up the body font-size / line-height
+body {
+	font-size: 0px + $doc-font-size;
+}
+
+
+// Colors
+// --------------------------------------------------
+$base-color				 : rgba(#222,0.8);
+$header-color			 : #000000;
+$sub-item-color			 : rgba(#000, 0.1);
+$header-margin			 : #F45145;
+$menu-top				 : #464541;
+$menu-height			 : 70px;
+$menu-overflow			 : #2E2E2E;
+$footer-bottom			 : rgba(#000,0.9);
+$body-color      		 : #fff;
+$text-color      		 : #242729;
+$comp-color 	 		 : complement(#222);
+$border-color    		 : lighten(#222,60);
+$white           		 : #fff;
+$black           		 : #000;
+$link-color 		     : #242729;
+
+$primary			     : #222;
+$success			     : #5cb85c;
+$warning			     : #dd8338;
+$danger				     : #C64537;
+$info				     : #308cbc;
+
+
+// Screen Size
+// --------------------------------------------------
+
+$small               : "only screen and (min-width: 30em)";
+$medium              : "only screen and (min-width: 48em)";
+$large               : "only screen and (min-width: 62.5em)";
