@@ -1,3 +1,3 @@
-*Welcome to PiggyBirdCTF blog*
+**Welcome to PiggyBirdCTF blog**
 
 Based on hpstr-theme by Aron Bordin
