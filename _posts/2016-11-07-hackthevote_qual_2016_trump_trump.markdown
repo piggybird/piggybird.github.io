@@ -3,12 +3,13 @@ layout:     post
 title:      "HackTheVote Qual 2016 Write-up: Trump Trump"
 subtitle:   "Crypto"
 date:       2016-11-07 10:12:45 +0700
-categories: [writeups]
+categories: [writeup]
+tags:       [writeup,ctf,crypto,hackthevote]
 ---
 
 # Trump Trump #
 
-## 100 points ##
+## 100 points (Crypto) ##
 
 With Trump about to be in office, autographed photos of him are selling like wildfire. The only problem is: Trump makes it a point to never sign a photo of himself. If you could get a signed picture, you could stand to make DOZENS of dollars.
 
