@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "EKOPARTY CTF Qual 2016 Write-up: The Fake Satoshi"
+title:      "EKOPARTY CTF Qual 2016 Write-up"
 subtitle:   "Crypto"
 date:       2016-11-01 06:58:03 +0700
 categories: [writeup]

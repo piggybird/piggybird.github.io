@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "HackTheVote Qual 2016 Write-up: The Best RSA"
+title:      "HackTheVote Qual 2016 Write-up"
 subtitle:   "Crypto"
 date:       2016-11-07 07:12:30 +0700
 categories: [writeup]

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "HackTheVote Qual 2016 Write-up: Trump Trump"
+title:      "HackTheVote Qual 2016 Write-up"
 subtitle:   "Crypto"
 date:       2016-11-07 10:12:45 +0700
 categories: [writeup]
