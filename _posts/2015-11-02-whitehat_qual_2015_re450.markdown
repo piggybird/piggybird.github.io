@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      "WriteHat GrandPrix Qual 2015 Write-up"
+title:      "WriteHat GrandPrix Qual: Hue"
 subtitle:   "Reverse Engineering"
 date:       2015-11-02 23:27:43 +0700
 categories: [writeup]
+authors:    [TalkyBird]
 tags:       [writeup,ctf,reversing,whitehat]
 ---
 

@@ -1,8 +1,9 @@
 ---
 layout:     post
-title:      "HackTheVote Qual 2016 Write-up"
+title:      "HackTheVote Qual 2016: The Best RSA"
 subtitle:   "Crypto"
 date:       2016-11-07 07:12:30 +0700
+authors:    [TalkyBird]
 categories: [writeup]
 tags:       [writeup,ctf,crypto,hackthevote]
 ---

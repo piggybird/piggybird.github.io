@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      "EKOPARTY CTF Qual 2016 Write-up"
+title:      "EKOPARTY Qual 2016: The Fake Satoshi"
 subtitle:   "Crypto"
 date:       2016-11-01 06:58:03 +0700
 categories: [writeup]
+authors:    [TalkyBird]
 tags:       [writeup,ctf,misc,ekoparty]
 ---
 

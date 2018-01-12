@@ -1,8 +1,9 @@
 ---
 layout:     post
-title:      "Hacklu CTF Qual 2015 Write-up"
+title:      "Hacklu Qual 2015: Secret Library"
 subtitle:   "Reverse Engineering"
 date:       2015-10-27 23:04:00 +0700
+authors:    [TalkyBird]
 categories: [writeup]
 tags:       [writeup,ctf,reversing,hacklu]
 ---
