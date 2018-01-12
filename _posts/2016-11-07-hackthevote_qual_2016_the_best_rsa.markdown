@@ -40,7 +40,7 @@ This seems to be the easiest part, but it took us several hours to perform the c
 
 > plain_text = c<sup>e</sup> (mod n)
 
-Here's our [script](https://github.com/duc-le/duc-le.github.io/blob/master/downloads/ctf/hackthevote_qual_2016_the_best_rsa_solve.py){:target="_blank"} to factorize **n**, decrypt **c** and save the plaintext to a given file.
+Here's our [script]({{ site.url }}/assets/ctf/hackthevote_qual_2016_the_best_rsa_solve.py){:target="_blank"} to factorize **n**, decrypt **c** and save the plaintext to a given file.
 The result is actually a gif file:
 
 ![flag]({{ site.url }}/assets/ctf/hackthevote_qual_2016_the_best_rsa_flag.gif)
